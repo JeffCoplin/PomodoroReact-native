@@ -29,7 +29,7 @@ function Promo() {
     if (isActive) {
       interval = setInterval(() => {
         setTime((time) => time - 1);
-      }, 10);
+      }, 1000);
     } else if (!isActive && time !== 0) {
       clearInterval(interval);
     }
